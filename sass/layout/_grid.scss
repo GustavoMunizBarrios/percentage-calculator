@@ -51,6 +51,8 @@ body {
             width: 14rem;
             margin-bottom: 4rem;
             height: 24.8rem;
+            padding: 2.5rem 3.6rem;
+
         }
         & p {
             color: #06296c;
@@ -67,6 +69,9 @@ body {
         display: block;
         border-bottom: 2px solid #06296c;
         transition: all 0.3s;
+        @include breakpoint(md) {
+            width: 80%;
+        }
         }
         & .button {
             /* <button class="button-27" role="button">Button 27</button> */
@@ -116,7 +121,7 @@ body {
         & .input-descuento {
             margin-bottom: 3.125rem;
         @include breakpoint(md) {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
         }
 
         }
@@ -124,6 +129,7 @@ body {
             font-size: 1.25rem;
             padding-top: 1.25rem;
             @include breakpoint(md) {
+                font-size: 1rem;
                 margin-top: 0.625rem;
                 margin-bottom: 0rem;
             }

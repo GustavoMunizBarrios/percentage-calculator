@@ -367,6 +367,7 @@ body .card {
     width: 14rem;
     margin-bottom: 4rem;
     height: 24.8rem;
+    padding: 2.5rem 3.6rem;
   }
 }
 body .card p {
@@ -384,6 +385,11 @@ body .card input {
   display: block;
   border-bottom: 2px solid #06296c;
   transition: all 0.3s;
+}
+@media (max-width: 760px) {
+  body .card input {
+    width: 80%;
+  }
 }
 body .card .button {
   /* <button class="button-27" role="button">Button 27</button> */
@@ -440,7 +446,7 @@ body .card .input-descuento {
 }
 @media (max-width: 760px) {
   body .card .input-descuento {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 body .card .textPrice {
@@ -449,6 +455,7 @@ body .card .textPrice {
 }
 @media (max-width: 760px) {
   body .card .textPrice {
+    font-size: 1rem;
     margin-top: 0.625rem;
     margin-bottom: 0rem;
   }
