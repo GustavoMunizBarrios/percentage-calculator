@@ -327,12 +327,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 760px) {
+  body {
+    position: inherit;
+    height: auto;
+  }
+}
 body header {
   padding-bottom: 1.5625rem;
+}
+@media (max-width: 760px) {
+  body header {
+    width: 22rem;
+    padding-bottom: 1rem;
+  }
 }
 body header h1 {
   font-size: 2rem;
   color: #06296c;
+}
+@media (max-width: 760px) {
+  body header h1 {
+    font-size: 1.5rem;
+  }
 }
 body .card {
   /* border: 1px solid black; */
@@ -344,6 +361,13 @@ body .card {
   background-color: whitesmoke;
   border-radius: 1.25rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 760px) {
+  body .card {
+    width: 14rem;
+    margin-bottom: 4rem;
+    height: 24.8rem;
+  }
 }
 body .card p {
   color: #06296c;
@@ -406,18 +430,40 @@ body .card .button:active {
 body .card .input-producto {
   margin-bottom: 1.875rem;
 }
+@media (max-width: 760px) {
+  body .card .input-producto {
+    margin-bottom: 1.5rem;
+  }
+}
 body .card .input-descuento {
   margin-bottom: 3.125rem;
+}
+@media (max-width: 760px) {
+  body .card .input-descuento {
+    margin-bottom: 1.5rem;
+  }
 }
 body .card .textPrice {
   font-size: 1.25rem;
   padding-top: 1.25rem;
+}
+@media (max-width: 760px) {
+  body .card .textPrice {
+    margin-top: 0.625rem;
+    margin-bottom: 0rem;
+  }
 }
 body .card .result {
   color: #06296c;
   font-size: 1.875rem;
   margin: 0;
   padding: 0 0 0px 33%;
+}
+@media (max-width: 760px) {
+  body .card .result {
+    margin-top: 0.9375rem;
+    padding: 0 0 0px 20%;
+  }
 }
 body .card .error {
   font-size: 0.9375rem;
